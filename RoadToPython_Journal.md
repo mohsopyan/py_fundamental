@@ -14,6 +14,7 @@ Jurnal ini mendokumentasikan proses belajar Python saya mulai dari nol, fokus pa
 | 6 | Percabangan Logic | and, or, if-elif-else | ✅ Berhasil |
 | 7 | Nested IF | if inside if (Logic levels) | ✅ Berhasil |
 | 8 | For Loop | for, range() | ✅ Berhasil |
+| 9 | While Loop | while, Conditionals | ✅ Berhasil |
 
 ---
 
@@ -42,6 +43,12 @@ Jurnal ini mendokumentasikan proses belajar Python saya mulai dari nol, fokus pa
     - `stop`: Batas akhir (eksklusif, angka ini tidak akan dicetak).
     - `step`: Jarak/lompatan antar angka (misal: lompat 2 untuk angka genap).
 - **Modulo (%) dalam Loop:** Sangat berguna untuk memfilter angka (contoh: `i % 2 == 0` untuk mencari angka genap).
+
+### 🔹 While Loop (Perulangan Dinamis)
+- Digunakan saat jumlah perulangan tidak diketahui secara pasti.
+- **Kondisi Berhenti:** Harus ada perubahan variabel di dalam loop agar tidak terjadi *Infinite Loop*.
+- **Break:** Perintah untuk keluar paksa dari perulangan.
+- **Continue:** Melewati sisa baris kode dan lanjut ke putaran loop berikutnya.
 
 ### 🔹 Best Practices
 - **Indentasi:** Spasi/Tab setelah tanda titik dua `:` pada `if` adalah wajib untuk menentukan blok kode.
