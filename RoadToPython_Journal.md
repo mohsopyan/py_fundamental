@@ -17,6 +17,7 @@ Jurnal ini mendokumentasikan proses belajar Python saya mulai dari nol, fokus pa
 | 9 | While Loop | while, Conditionals | ✅ Berhasil |
 | 10 | Nested Loop & Menu | while True, break | ✅ Selesai |
 | 11 | Python List(Basic) | append(), len(), indexing | ✅ Berhasil |
+| 12 | List Slicing & Sorting | .sort(), [start:stop], sum() | ✅ Berhasil |
 
 ---
 
