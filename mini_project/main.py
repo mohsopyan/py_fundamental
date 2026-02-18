@@ -1,10 +1,12 @@
 from utils import tools as t, formatter as f
 
 print(t.sapa_user("Moyan"))
-print(f"Pajak Anda: {t.hitung_pajak(100000)}")
 
-user_level = 10
+pajak = 100000
+print(f"Pajak Anda: {t.hitung_pajak(pajak)}")
+print("Sistem tetap berjalan dengan aman...")
 
+user_level = "Expert"
 if t.cek_akses(user_level):
     print("Akses Diberikan ke Dashboard Expert")
 else:

@@ -7,6 +7,7 @@ Proyek ini adalah implementasi sistem backend sederhana menggunakan Python Modul
 - **Access Control**: Validasi level akses user.
 - **Tax Calculation**: Fungsi perhitungan pajak otomatis.
 - **String Formatter**: Header decorator untuk tampilan terminal.
+- **Reliability & Safety**: Implementasi `try...except...finally` untuk mencegah sistem crash akibat input tidak valid.
 
 ## Struktur Proyek
 - `main.py`: Menjalankan alur program utama.
