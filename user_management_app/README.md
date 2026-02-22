@@ -1,40 +1,52 @@
-# Simple Backend Logic System 🚀
+# 🚀 User Management System v1.0
 
-Proyek ini adalah implementasi sistem backend sederhana menggunakan Python Modules dan Packages.
+Sistem manajemen user berbasis Python yang mengintegrasikan data lokal (JSON) dan data eksternal (REST API). Proyek ini menunjukkan implementasi fundamental backend, OOP, dan integrasi sistem.
 
-## Fitur Utama
+## ✨ Fitur Utama
 
 ### 1. Advanced OOP Architecture
 - **Base Class `User`**: Standarisasi entitas user dengan enkapsulasi data.
-- **Inheritance (Pewarisan)**: Class `Admin` yang mewarisi sifat `User` namun memiliki kapabilitas khusus.
-- **Method Overriding**: Personalisasi perilaku fungsi berdasarkan peran user (User vs Admin).
-- **Type Checking**: Menggunakan `isinstance()` untuk validasi tipe objek secara dinamis (Runtime).
+- **Inheritance**: Class `Admin` dengan kapabilitas khusus (kode akses & penghapusan data).
+- **Polymorphism**: Method `.sapa()` yang berperilaku berbeda antar role.
 
-### 2. Reliability & Integrity
-- **Automated Validation**: Constructor class dilengkapi dengan `try..except` untuk menjamin tipe data `level` selalu valid (Integer).
-- **Graceful Error Handling**: Sistem tetap berjalan (tidak crash) meskipun menerima input yang tidak terduga.
-- **Smart Constructor**: Validasi tipe data otomatis di dalam `__init__` untuk mencegah error pada input yang tidak valid.
+### 2. Smart Integration & Persistence
+- **External API Consumption**: Menarik data user secara dinamis dari `jsonplaceholder` menggunakan library `requests`.
+- **Data Hydration**: Secara otomatis mengubah data mentah (JSON) menjadi objek cerdas (Class Instance).
+- **Persistence**: Penyimpanan data permanen ke dalam file `database.json`.
 
-### 3. Data Persistence (Penyimpanan)
-- **JSON Serialization**: Menyimpan status objek Python ke dalam file format `.json`.
-- **Data Hydration**: Proses membangkitkan kembali data mentah dari JSON menjadi objek pintar (Class Instance) agar fungsi-fungsinya dapat digunakan kembali.
-
-### 4. External API Integration
-- **REST API Consumption**: Menggunakan library `requests` untuk mengambil data dari server eksternal.
-- **Data Mapping**: Mengonversi format data eksternal(API) ke dalam standar objek internal secara otomatis.
-- **Network Reliability**: Implementasi penanganan error koneksi (timeout & status code checking).
-
-### 5. Modular System
-- Struktur folder yang rapi memisahkan antara logika utilitas (`tools.py`) dan blueprint data (`models.py`).
+### 3. Professional Standards
+- **Interactive CLI**: Antarmuka menu di terminal untuk pengalaman pengguna yang intuitif.
+- **Robustness**: Penanganan error pada kegagalan koneksi internet dan validasi tipe data input.
+- **Modular Code**: Pemisahan tanggung jawab yang jelas antara `models`, `tools`, dan `logic`.
 
 ## 📁 Struktur Proyek
-- `main.py`: Entry point aplikasi.
-- `database.json`: File penyimpanan permanen data user.
-- `utils/`: 
-    - `models.py`: Berisi blueprint/class (`User` dan `Admin`).
-    - `tools.py`: Berisi fungsi utility dan helper.
+```text
+user_management_app/
+├── main.py              # Entry point & Menu Logic
+├── database.json        # Local Storage
+├── requirements.txt     # Daftar Dependencies
+└── utils/
+    ├── models.py        # Blueprints (User & Admin)
+    └── tools.py         # API & File Helpers
+```
 
 ## Cara Menjalankan
+### 1. Clone Repositori
 ```bash
+git clone [https://github.com/mohsopyan/py_fundamental.git](https://github.com/mohsopyan/py_fundamental.git)
+cd user_management_app
+```
+
+### 2. Instal Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Jalankan Aplikasi
+``` bash
 python main.py
 ```
+
+## 🛠️ Tech Stack
+- **Language**: Python 3.13+
+- **Library**: `requests` (API Handling), `json` (Storage)
