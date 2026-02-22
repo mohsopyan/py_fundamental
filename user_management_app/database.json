@@ -1,0 +1,68 @@
+[
+    {
+        "nama": "Moyan",
+        "email": "moyan@example.com",
+        "level": 10
+    },
+    {
+        "nama": "Budi",
+        "email": "budi@test.com",
+        "level": 5
+    },
+    {
+        "nama": "Moyan Expert",
+        "email": "admin@moyan.com",
+        "level": 10,
+        "kode_akses": "SECRET_99"
+    },
+    {
+        "nama": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "level": 1
+    },
+    {
+        "nama": "Ervin Howell",
+        "email": "Shanna@melissa.tv",
+        "level": 1
+    },
+    {
+        "nama": "Clementine Bauch",
+        "email": "Nathan@yesenia.net",
+        "level": 1
+    },
+    {
+        "nama": "Patricia Lebsack",
+        "email": "Julianne.OConner@kory.org",
+        "level": 1
+    },
+    {
+        "nama": "Chelsey Dietrich",
+        "email": "Lucio_Hettinger@annie.ca",
+        "level": 1
+    },
+    {
+        "nama": "Mrs. Dennis Schulist",
+        "email": "Karley_Dach@jasper.info",
+        "level": 1
+    },
+    {
+        "nama": "Kurtis Weissnat",
+        "email": "Telly.Hoeger@billy.biz",
+        "level": 1
+    },
+    {
+        "nama": "Nicholas Runolfsdottir V",
+        "email": "Sherwood@rosamond.me",
+        "level": 1
+    },
+    {
+        "nama": "Glenna Reichert",
+        "email": "Chaim_McDermott@dana.io",
+        "level": 1
+    },
+    {
+        "nama": "Clementina DuBuque",
+        "email": "Rey.Padberg@karina.biz",
+        "level": 1
+    }
+]
