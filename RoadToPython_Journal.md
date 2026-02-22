@@ -24,6 +24,11 @@ Jurnal ini mendokumentasikan proses belajar Python saya mulai dari nol, fokus pa
 | 15 | Pro Function | Type Hinting, Default Params | ✅ Berhasil |
 | 16 | Dynamic Arguments | *args, **kwargs | ✅ Berhasil |
 | 17 | Modules | import, from ... import | ✅ Berhasil |
+| 18 | Object Oriented (OOP) | class, __init__, self | ✅ Berhasil |
+| 19 | Inheritance & Overriding | super(), Child Class | ✅ Berhasil |
+| 20 | Reliability (Error Handling) | try, except, isintance() | ✅ Berhasil |
+| 21 | Data Persistence | json.dump(), json.load() | ✅ Berhasil |
+| 22 | External Integration (API) | requests, get(), Hydration | ✅ Berhasil |
 
 ---
 
@@ -58,6 +63,22 @@ Jurnal ini mendokumentasikan proses belajar Python saya mulai dari nol, fokus pa
 - **Kondisi Berhenti:** Harus ada perubahan variabel di dalam loop agar tidak terjadi *Infinite Loop*.
 - **Break:** Perintah untuk keluar paksa dari perulangan.
 - **Continue:** Melewati sisa baris kode dan lanjut ke putaran loop berikutnya.
+
+### 🔹 Object Oriented Programming (OOP)
+- **Class vs Object:** Class adalah cetakan(blueprint), Object adalah hasil cetakannya.
+- **Inheritance:** Mewariskan sifat dari Parent Class ke Child Class (misal: `Admin` mewarisi `User`) untuk menghindari pengulangan kode.
+- **Method Overriding:** Mengubah cara kerja fungsi bawaan Parent Class di dalam Child Class agar lebih spesifik.
+
+### 🔹 Backend Reliability & Persistence
+- **Error Handling:** Mencegah aplikasi mati total saat terjadi kesalahan (seperti internet putus atau file hilang).
+- **JSON Handling:** Standar industri untuk menyimpan data.
+    - **Serialization:** Object -> JSON.
+    - **Hydration:** JSON -> Objek pintar (Class Instance).
+- **Isintance:** Mengecek identitas objek secara aman sebelum menjalankan perintah khusus (Type Checking).
+
+### 🔹 External Integartion
+-- **API Request:** Mengambil data dari server lain menggunakan `requests.get()`.
+-- **Status Codes:** Selalu gunakan `raise_for_status()` untuk memastikan data yang diambil valid dan server tujuan tidak error.
 
 ### 🔹 Best Practices
 - **Indentasi:** Spasi/Tab setelah tanda titik dua `:` pada `if` adalah wajib untuk menentukan blok kode.
