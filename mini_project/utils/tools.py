@@ -1,4 +1,5 @@
 import json
+import requests
 
 def simpan_data(list_user, filename="database.json"):
     try:
@@ -19,6 +20,19 @@ def muat_data(filename="database.json"):
             return data
     except FileNotFoundError:
         print("Peringatan: File database tidak ditemukan.")
+        return []
+    
+def ambil_data_internet():
+    url = "https://jsonplaceholder.typicode.com/users"
+    try:
+        print(f"🌐 Menghubungkan ke {url}...")
+        respons = requests.get(url, timeout=5)
+
+        respons.raise_for_status()
+
+        return respons.json()
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Koneksi gagal: {e}")
         return []
 
 def sapa_user(nama:str):

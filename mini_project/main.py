@@ -1,7 +1,7 @@
 from utils import tools as t, formatter as f
 from utils.models import User, Admin
 
-from utils.tools import simpan_data, muat_data
+from utils.tools import simpan_data, muat_data, ambil_data_internet
 
 data_mentah = muat_data()
 
@@ -22,6 +22,21 @@ for user in user_objects:
         print(user.hapus_data())
 
     print("-" * 30)
+
+data_lokal = [obj for obj in user_objects]
+
+data_internet = ambil_data_internet()
+user_internet_objects = []
+
+for item in data_internet:
+    obj = User(nama=item['name'], email=item['email'], level=1)
+    user_internet_objects.append(obj)
+
+semua_user_final = data_lokal + user_internet_objects
+
+print(f"\n--- TOTAL USER DALAM SISTEM {len(semua_user_final)}---")
+for u in semua_user_final:
+    print(u.sapa())
 
 #print(t.sapa_user("Moyan"))
 

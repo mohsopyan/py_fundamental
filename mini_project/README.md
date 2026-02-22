@@ -19,7 +19,12 @@ Proyek ini adalah implementasi sistem backend sederhana menggunakan Python Modul
 - **JSON Serialization**: Menyimpan status objek Python ke dalam file format `.json`.
 - **Data Hydration**: Proses membangkitkan kembali data mentah dari JSON menjadi objek pintar (Class Instance) agar fungsi-fungsinya dapat digunakan kembali.
 
-### 4. Modular System
+### 4. External API Integration
+- **REST API Consumption**: Menggunakan library `requests` untuk mengambil data dari server eksternal.
+- **Data Mapping**: Mengonversi format data eksternal(API) ke dalam standar objek internal secara otomatis.
+- **Network Reliability**: Implementasi penanganan error koneksi (timeout & status code checking).
+
+### 5. Modular System
 - Struktur folder yang rapi memisahkan antara logika utilitas (`tools.py`) dan blueprint data (`models.py`).
 
 ## 📁 Struktur Proyek
